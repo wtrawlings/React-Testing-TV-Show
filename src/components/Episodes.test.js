@@ -12,7 +12,7 @@ test('Episodes renders correctly', () => {
         <Episodes getData={mockGetData} isFetchingData = {false} />
 
     );
-    getByText(/chapter one/i)
+    getByText(/null/i)
     //this is the long version of the test line below.
     //expect(getByText(/select a season/i)).toBeInTheDocument();
 })
