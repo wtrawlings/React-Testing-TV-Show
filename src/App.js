@@ -26,7 +26,7 @@ export default function App() {
     ;
   }, []);
 
-  const handleSelect = e => {
+  const handleSelect = e => { // 'e' stands for event
     setSelectedSeason(e.value);
   };
 

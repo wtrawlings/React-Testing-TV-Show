@@ -1,6 +1,7 @@
 import React from 'react';
 import parse from 'html-react-parser';
 
+//note that 'e' stands for episode not event in this context
 export default function Episodes(props) {
   return (
     <div className="episodes">
