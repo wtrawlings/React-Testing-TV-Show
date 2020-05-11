@@ -10,6 +10,9 @@ const fetchShow = () => {
           //console.log(res);
           return res
         })
+      .catch(error => {
+        console.log({error});
+      })
   };
 
 export default fetchShow;

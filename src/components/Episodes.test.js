@@ -5,9 +5,10 @@ import Episodes from './Episodes';
 
  test('a string from Episodes Renders at all', async () => {
     //arrange
-    const { getByText } = render(<Episodes />);
+    const { getAllByTestId } = render(<Episodes episodes={[{id:1},{id:2},{id:3}]}/>);
     //act
-    const appTest = getByText(/chapter/i);
+    const appTest = getAllByTestId("episode");
     //assert
-    expect(appTest).toBeInTheDocument();
+    expect(appTest).toHaveLength(3);
  })
+
