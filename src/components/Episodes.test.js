@@ -1,18 +1,13 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import { Episodes } from './Episodes';
+import Episodes from './Episodes';
 
-// test('explain the test', () => {
-    
-// })
-test('Episodes renders correctly', () => {
-    const mockGetData = jest.fn();
-    const { getByText } = render(
-        <Episodes getData={mockGetData} isFetchingData = {false} />
-
-    );
-    getByText(/null/i)
-    //this is the long version of the test line below.
-    //expect(getByText(/select a season/i)).toBeInTheDocument();
-})
+ test('a string from Episodes Renders at all', async () => {
+    //arrange
+    const { getByText } = render(<Episodes />);
+    //act
+    const appTest = getByText(/chapter/i);
+    //assert
+    expect(appTest).toBeInTheDocument();
+ })
