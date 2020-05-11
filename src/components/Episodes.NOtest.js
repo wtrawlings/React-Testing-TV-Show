@@ -11,4 +11,4 @@ import Episodes from './Episodes';
     //assert
     expect(appTest).toHaveLength(3);
  })
-
+//when we have data in the episodes- we will have a render
